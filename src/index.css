@@ -24,14 +24,14 @@ code {
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-.container .img-container{
+.container .products{
  display: flex;
  flex-direction: column;
  justify-content: center;
  object-fit: cover;
 }
 
-.container .img-container img{
+.container .products img{
   width: 300px;
   height: 350px;
 }
@@ -40,15 +40,3 @@ code {
   text-align: center;
 }
 
-.navbar{
-  list-style: none;
-  text-align: center;
-  padding: 10px;
-
-}
-
-.navbar .category{
- border: 1px solid red;
- background-color: bisque;
-
-}
