@@ -56,7 +56,6 @@ function App() {
 
   const clickCategory = (category) => {
     setSelectedCategory(category);
-    console.log(category);
   };
 
   return (
@@ -73,25 +72,20 @@ function App() {
         <div className="products">
           {filterCategory(selectedCategory).map((product, index) => (
             <div key={index} className="product">
+              <div className="imageSec">
+                <img src={product.image} alt="images" />
+              </div>
 
-            
-             <div className="imageSec">
-              <img src={product.image} alt="images" />
-             </div>
+              <p className="title">{product.title}</p>
 
-             <p className="title">{product.title}</p>
-             
               <h3 className="price">
                 <span className="prColor">Price:</span>
-                {product.price + "$"}
+                {product.price}$
               </h3>
-             
-              
             </div>
           ))}
         </div>
       </div>
-     
     </div>
   );
 }
