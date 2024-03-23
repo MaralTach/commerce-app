@@ -43,7 +43,10 @@ h1 {
 .categories {
   text-align: center;
   background-color: rgb(237, 160, 18);
-
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 .categories button {
   margin: 10px;
@@ -146,3 +149,4 @@ img:hover {
 .products .prColor{
   color: black;
 }
+
